@@ -29,7 +29,6 @@ export const AWFY_BENCHMARKS = {
         suite: 'speedometer',
         option: 'opt',
         application: 'geckoview',
-        extraOptions: ['geckoview'],
       },
       'geckoview-webrender': {
         color: PALETTE.red,
@@ -39,7 +38,7 @@ export const AWFY_BENCHMARKS = {
         platformSuffix: '-qr',
         option: 'opt',
         application: 'geckoview',
-        extraOptions: ['geckoview'],
+        extraOptions: ['webrender'],
       },
       fenix: {
         color: PALETTE.orange,
@@ -48,7 +47,6 @@ export const AWFY_BENCHMARKS = {
         suite: 'speedometer',
         option: 'opt',
         application: 'fenix',
-        extraOptions: ['fenix'],
       },
       'fenix-webrender': {
         color: PALETTE.yellow,
@@ -58,7 +56,7 @@ export const AWFY_BENCHMARKS = {
         platformSuffix: '-qr',
         option: 'opt',
         application: 'fenix',
-        extraOptions: ['fenix'],
+        extraOptions: ['webrender'],
       },
     },
     label: 'Speedometer',
@@ -518,6 +516,11 @@ export const CONFIG = {
     androidPixel2: {
       label: 'Android (Pixel 2)',
       platforms: ['android-hw-p2-8-0-android-aarch64', 'android-hw-p2-8-0-android-aarch64-shippable'],
+      categories: MOBILE_CATEGORIES,
+    },
+    androidGalaxyS7: {
+      label: 'Android (Galaxy S7)',
+      platforms: ['android-hw-s7-8-0-android-aarch64-shippable'],
       categories: MOBILE_CATEGORIES,
     },
   },
